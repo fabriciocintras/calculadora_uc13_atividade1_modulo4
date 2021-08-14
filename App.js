@@ -30,6 +30,7 @@ export default function App() {
       case '/': 
         setCurrentNumber((fistNumber / lastNumber).toString())
         return
+      
     }
   }
 
@@ -42,6 +43,7 @@ export default function App() {
     switch(buttonPressed){
       case 'DEL':
         setCurrentNumber(currentNumber.substring(0, (currentNumber.length - 2)))
+        setLastNumber(lastNumber.substring(0,(lastNumber.length -2)))//
         return
       case 'LIMPAR': // Limpa todo o conteúdo
         setLastNumber("") 
